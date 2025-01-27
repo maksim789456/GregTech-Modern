@@ -5,6 +5,7 @@ import com.gregtechceu.gtceu.data.recipe.CraftingComponent;
 import net.minecraft.util.RandomSource;
 
 import java.time.LocalDate;
+import java.time.Month;
 import java.util.Arrays;
 import java.util.function.Supplier;
 
@@ -131,7 +132,8 @@ public class GTValues {
             MODID_FTB_CHUNKS = "ftbchunks",
             MODID_JAVD = "javd",
             MODID_FTB_TEAMS = "ftbteams",
-            MODID_ARGONAUTS = "argonauts";
+            MODID_ARGONAUTS = "argonauts",
+            MODID_CCTWEAKED = "computercraft";
 
     /**
      * Spray painting compat modids
