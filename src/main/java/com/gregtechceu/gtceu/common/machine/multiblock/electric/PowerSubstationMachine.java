@@ -332,13 +332,18 @@ public class PowerSubstationMachine extends WorkableMultiblockMachine
     }
 
     @Override
-    public EnergyChange getEnergyChange() {
-        return new EnergyChange(averageInLastSec, averageOutLastSec);
+    public boolean supportsBigIntEnergyValues() {
+        return true;
     }
 
     @Override
-    public boolean supportsBigIntEnergyValues() {
-        return true;
+    public long getAverageInputLastSec() {
+        return averageInLastSec;
+    }
+
+    @Override
+    public long getAverageOutputLastSec() {
+        return averageOutLastSec;
     }
 
     @Override
