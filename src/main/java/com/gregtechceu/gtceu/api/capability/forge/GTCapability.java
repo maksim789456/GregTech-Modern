@@ -1,6 +1,7 @@
 package com.gregtechceu.gtceu.api.capability.forge;
 
 import com.gregtechceu.gtceu.api.capability.*;
+import com.gregtechceu.gtceu.api.machine.feature.IHasCircuitSlot;
 import com.gregtechceu.gtceu.api.machine.feature.IOverclockMachine;
 import com.gregtechceu.gtceu.api.machine.feature.ITieredMachine;
 import com.gregtechceu.gtceu.api.machine.feature.multiblock.IMaintenanceMachine;
@@ -47,6 +48,8 @@ public class GTCapability {
             .get(new CapabilityToken<>() {});
     public static final Capability<IOverclockMachine> CAPABILITY_OVERCLOCK = CapabilityManager
             .get(new CapabilityToken<>() {});
+    public static final Capability<IHasCircuitSlot> CAPABILITY_CIRCUIT_SLOT = CapabilityManager
+            .get(new CapabilityToken<>() {});
 
     public static final Capability<IMedicalConditionTracker> CAPABILITY_MEDICAL_CONDITION_TRACKER = CapabilityManager
             .get(new CapabilityToken<>() {});
@@ -69,5 +72,6 @@ public class GTCapability {
         event.register(IHazardParticleContainer.class);
         event.register(ITieredMachine.class);
         event.register(IOverclockMachine.class);
+        event.register(IHasCircuitSlot.class);
     }
 }
